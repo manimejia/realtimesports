@@ -13,6 +13,10 @@ html {
     height: 100%;
 }
 
+body{
+    font-size: 16px;
+}
+
 body,
 h1,
 h2,
@@ -21,6 +25,14 @@ h4,
 h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
 }
 
@@ -64,6 +76,13 @@ header.intro-message {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.ug-sportsapp-bg {
+    min-height:400px;
+    background: url(../img/ug-sports-app.jpg)  no-repeat center center;
+    background-size: cover;
+
 }
 
 @media(max-width:767px) {
@@ -172,4 +191,40 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+.highlightlist ul {
+    text-align: center;
+}
+.highlightlist ul li {
+    display:inline-block;
+    list-style: none;
+    padding:.5em;
+    font-size: 1.2em;
+}
+
+blockquote{
+    border:none;
+    font-style:italic;
+    font-size:2em;
+}
+blockquote:before {
+    content: open-quote;
+    font-size: 10rem;
+    float: left;
+    margin-left: -1em;
+    font-family: cursive;
+    color: gray;
+    line-height: 8rem;
+   }
+
+li {
+    padding-bottom: .5em;
+}
+s {
+    color:red;
+    text-decoration: line-through;
+}
+s em {
+    color:white;
 }

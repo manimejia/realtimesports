@@ -1,9 +1,90 @@
     <!-- About Section -->
-    <section id="about" class="container content-section">
+    <section id="overview" class="container content-section">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <br/><br/>
-              {{ site.data.about.customers | markdownify }}
+            <div class="col-lg-10 col-lg-offset-1">
+              <h3>{{ site.data.overview.customers.headline }}</h3>
+              {{ site.data.overview.customers.content | markdownify }}
+              <h3 class="clearfix">{{ site.data.overview.game.headline }}</h3>
+              {{ site.data.overview.game.content | markdownify }}
+              <div class="row">
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                    <img src="/img/overview-theapp.jpg">
+                    <div class="caption">{{ site.data.overview.game.theapp | markdownify }}</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                    <img src="/img/overview-theevents.jpg">
+                    <div class="caption">{{ site.data.overview.game.theevents | markdownify }}</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                    <img src="/img/overview-thepoints.jpg">
+                    <div class="caption">{{ site.data.overview.game.thepoints | markdownify }}</div>
+                    </div>
+                  </div>
               </div>
+              <div class="highlightlist">
+                {{ site.data.overview.game.highlights | markdownify }}
+              </div>
+              <br/>
+              <br/>
+              <hr>
+              <h2 class="text-center">Yea…<br>Thats cool. &nbsp;&nbsp; So what?</h2>
+              <hr>
+              <br/>
+              <br/>
+            </div>
+        </div>
+
+    </section>
+    <section id="affiliates" class="container content-section">
+        <div class="row">
+        <div class="col-lg-12 ug-sportsapp-bg"/>
+        </div>
+        
+        <div class="row">
+        <div class="quote col-sm-10 col-sm-offset-1 text-justify">
+          <h2  class="text-center">{{ site.data.affiliates.headline }}</h2>
+          {{ site.data.affiliates.content | markdownify }}
+
+          <div class="row">
+          <div class="quote col-sm-6 text-justify">
+            <h3 class="text-center">{{ site.data.affiliates.reffer.headline}}</h3>
+            {{ site.data.affiliates.reffer.content | markdownify }}
+          </div>
+          <div class="quote col-sm-6 text-justify">
+            <h3 class="text-center">{{ site.data.affiliates.invite.headline}}</h3>
+            {{ site.data.affiliates.invite.content | markdownify }}
+          </div>
+          </div>
+        </div>
+        </div>
+
+
+
+        <div class="row">
+        <br/><br/>
+        <iframe class="col-sm-4 col-sm-offset-4" height="230" src="{{ site.data.youtube.livesportsappintro.url}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row">
+        <div class="quote col-sm-10 col-sm-offset-1 text-center">
+          {{ site.data.affiliates.quote | markdownify }}
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+              <h4>{{ site.data.affiliates.partners.headline }}</h3>
+              {{ site.data.affiliates.partners.content | markdownify }}
+              <h4>{{ site.data.affiliates.success.headline }}</h3>
+              {{ site.data.affiliates.success.content | markdownify }}
+            </div>
         </div>
     </section>
+
+
+
